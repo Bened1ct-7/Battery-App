@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battery App</title>
+  <script src="https://kit.fontawesome.com/fffd17f093.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="section">
+    <header class="p-3 shadow-sm">
+      <div class="container-lg">
+        <div class="heading">
+          <div class="brand">
+            <h1 class="me-1">Battery Manager</h1>
+            <i class="fa-solid fa-bars-progress ms-1"></i>
+          </div>
+          <i class="fa-solid fa-sun mode-toggle"></i>
+        </div>
+      </div>
+    </header>
+    
+    <div class="main">
+      <div class="container-lg">
+        <div class="battery">
+          <div class="battery-bar ">
+            <i class="fa-solid fa-bolt charging"></i>
+            <p><span id="level"></span>%</p>
+            <div class="bar"></div>
+          </div>
+          <div class="text-center mt-3 fs-5 fw-normal" id="charging-text"></div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="p-3">
+      <div class="container-lg">
+        <div class="text-center">&copy; Benedict</div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
