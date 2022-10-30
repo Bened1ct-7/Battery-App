@@ -1,0 +1,120 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+ :root {
+   --main-color: #45BF58;
+   --header-bg: #111;
+   --body-bg: #333;
+ }
+
+ .medium {
+   --main-color: #AFA42A;
+ }
+
+ .red {
+   --main-color: #AB3F2A;
+ }
+ 
+ .light {
+   --header-bg: #fff;
+   --body-bg: #f9f9f9;
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+   color: var(--main-color);
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+ }
+
+
+ .section {
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+   height: 100vh;
+ }
+
+ body {
+   background: var(--body-bg);
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+   margin: 0;
+ }
+
+ header {
+   background: var(--header-bg);
+ }
+
+ header .heading {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: var(--main-color);
+ }
+
+ header .brand {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ header i {
+   font-size: 1.5rem;
+ }
+ 
+ footer div {
+   color: var(--main-color);
+ }
+
+ .main .container-lg {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .battery-bar {
+   height: 9rem;
+   width: 9rem;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+   position: relative;
+ }
+ 
+ .charging {
+   display: none;
+ }
+ 
+ .battery-bar .bar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   border-radius: 50%;
+   border: 5px solid var(--main-color);
+ }
+ 
+ .battery-bar.active .bar {
+   border: 0;
+   border-right: 5px solid var(--main-color);
+   animation: rotate 1s linear infinite;
+ }
+
+ @keyframes rotate {
+   from {
+     transform: rotate(0deg);
+   } to {
+     transform: rotate(360deg);
+   }
+ }
