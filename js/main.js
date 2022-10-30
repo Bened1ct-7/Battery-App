@@ -76,7 +76,7 @@ if (!navigator.getBattery) {
         chargingText.textContent = "Charging";
         batteryBar.classList.add('active')
       }
-       level = battery.level;
+       level = battery.level * 100;
        levelText.textContent = level;
     }
     
